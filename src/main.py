@@ -1,21 +1,21 @@
 from datetime import datetime
 
-from models.produto import Produto
+# from models.produto import Produto
 
-produto = Produto(
-    nome="Arroz",
-    peso=1.5,
-    valor=6.0,
-    codigo=1,
-)
+# produto = Produto(
+#     nome="Arroz",
+#     peso=1.5,
+#     valor=6.0,
+#     codigo=1,
+# )
 
-print(produto.__dict__)
+# print(produto.__dict__)
 
-produto.atualizar_valor(7.0)
+# produto.atualizar_valor(7.0)
 
-print(produto.__dict__)
+# print(produto.__dict__)
 
-produto.consultar_codigo()
+# produto.consultar_codigo()
 
 from models.cliente import Cliente
 
@@ -24,6 +24,8 @@ cliente = Cliente(
     cpf="086.038.255-99",
     endereco="Avenida Miguel Frias e Vasconcelos - 1200",
     telefone="48-99112-8819",
+    email="as@gmail.com",
+    senha="1234456",
 )
 
 print(cliente.__dict__)
@@ -37,48 +39,61 @@ cliente.atualizar_cadastro(
 
 print(cliente.__dict__)
 
-from models.estoque import Estoque
+cliente.recuperar_senha()
 
-estoque = Estoque(
-    quantidade=500,
-    validade=20,
-)
+# from models.estoque import Estoque
 
-print(estoque.__dict__)
+# estoque = Estoque(
+#     quantidade=500,
+#     validade=20,
+# )
 
-from models.usuario import Usuario
+# print(estoque.__dict__)
 
-usuario = Usuario(
-    email="elefantinhochaw@gmail.com",
-    senha="euamosuhi10",
-)
+# from models.usuario import Usuario
 
-print(usuario.__dict__)
+# usuario = Usuario(
+#     email="elefantinhochaw@gmail.com",
+#     senha="euamosuhi10",
+# )
+
+# print(usuario.__dict__)
 
 
-from models.carrinho import Carrinho
+# from models.carrinho import Carrinho
 
-carrinho = Carrinho(
-    valor=12.99,
-    quantidade=10,
-)
+# carrinho = Carrinho(
+#     valor=12.99,
+#     quantidade=10,
+# )
 
-print(carrinho.__dict__)
+# print(carrinho.__dict__)
 
-from models.historico import Historico
+# from models.historico import Historico
 
-historico = Historico(
-    data=datetime.now(),
-    quantidade=15,
-)
+# historico = Historico(
+#     data=datetime.now(),
+#     quantidade=15,
+# )
 
-print(historico.__dict__)
+# print(historico.__dict__)
 
-from models.pedido import Pedido
+# from models.pedido import Pedido
 
-pedido = Pedido(
-    orcamento=True,  # or False
-    status_entrega="Pedido em Separação",
-)
+# pedido = Pedido(
+#     orcamento=True,  # or False
+#     status_entrega="Pedido em Separação",
+# )
 
-print(pedido.__dict__)
+# print(pedido.__dict__)
+
+# from models.pagamento import Pagamento
+
+# pagamento = Pagamento(
+#     forma_de_pagamento="Debito",
+#     nota_fiscal="a1b2c3d4",
+#     valor=355.56,
+#     status="Digite a sua Senha",
+# )
+
+# print(pagamento.__dict__)

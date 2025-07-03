@@ -4,7 +4,7 @@ class Usuario:
         self.senha = senha
 
     def recuperar_senha(self):
-        pass
+        print("recuperar_senha")
 
     def fazer_login(self):
         pass

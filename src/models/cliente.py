@@ -1,5 +1,9 @@
-class Cliente:
-    def __init__(self, nome, cpf, endereco, telefone):
+from .usuario import Usuario
+
+
+class Cliente(Usuario):
+    def __init__(self, nome, cpf, endereco, telefone, email, senha):
+        super().__init__(email=email, senha=senha)
         self.nome = nome
         self.cpf = cpf
         self.endereco = endereco
